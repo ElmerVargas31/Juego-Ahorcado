@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="shortcut icon" href="img/figura6.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <img src="img/bandera.png" alt="Unión Europea">
+        <p>Juego del Ahorcado</p>
+    </header>
+	<section>
+        <aside>
+            <img class="euro1" src="img/europa2.png" alt="Europa" width="200" height="160">
+            <img class="euro2" src="img/europa.jpg" alt="Europa" width="200" height="400">
+        </aside>
+		<article>
+		<form name="fdatos">
+            <!--Instrucciones-->
+			<div class="cajaInstru"><h2>Ciudades de Europa</h2></div>
+			<!--Palabra-->
+            <div class="cajaPalabra">
+                <h2>-Instrucciones-</h2>
+                <p>El objetivo principal es adivinar cual es la ciudad de Europa correcta antes que el muñeco del ahorcado se complete. En cuanto más fallas de letras sean existentes, menos oportunidades posees para ganar.</p>
+            </div>
+            <!--Figura del Ahorcado-->
+			<div class="cajaFigura">
+                <p id="txtTitulo">Juega y adivina la ciudad de Europa correcta:</p>
+                <br>
+                <div id="txtletra1"></div>
+                <div id="txtletra2"></div>
+                <div id="txtletra3"></div>
+                <div id="txtletra4"></div>
+                <div id="txtletra5"></div>
+
+                <div id="ahorcado_img"></div>
+                <div id="puntos">
+                    <input type="button" value="Nuevo Juego" id="n_Partida" onclick="funInicioJuego()">
+                    <span class="label">Ganados</span>
+                    <span id="marcador1"></span>
+                    <span class="label">Perdidos</span>
+                    <span id="marcador2"></span>
+                </div>
+                <div id="txtPalabra"></div>
+            </div>
+            <!--Botones-->
+			<div class="cajaBotones">
+                <input type="button" value="A" id="A" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="B" id="B" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="C" id="C" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="D" id="D" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="E" id="E" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="F" id="F" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="G" id="G" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="H" id="H" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="I" id="I" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="J" id="J" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="K" id="K" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="L" id="L" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="M" id="M" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <input type="button" value="N" id="N" class="cajaBoton" onClick="funAhorcado(this.value)">
+                <div class="centra_boton">
+                    <input type="button" value="Ñ" id="Ñ" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="O" id="O" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="P" id="P" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="Q" id="Q" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="R" id="R" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="S" id="S" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="T" id="T" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="U" id="U" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="V" id="V" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="W" id="W" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="X" id="X" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="Y" id="Y" class="cajaBoton" onClick="funAhorcado(this.value)">
+                    <input type="button" value="Z" id="Z" class="cajaBoton" onClick="funAhorcado(this.value)">
+                </div>
+			</div><!--Fin de Botones-->
+		</form>
+		</article>
+	</section>
+    <footer>Programación en JavaScript</footer>
+    <script src="js/codigoJS.js"></script>
+</body>
+</html>
